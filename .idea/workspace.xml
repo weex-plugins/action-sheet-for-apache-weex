@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4b346f1-e0fc-46e7-9349-ba0a6c78b036" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.weexpack.cache" afterPath="$PROJECT_DIR$/.weexpack.cache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin.xml" afterPath="$PROJECT_DIR$/plugin.xml" />

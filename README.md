@@ -21,7 +21,7 @@ actionSheet ，方便用户事件选择 以下为 actionSheet 相关的 API
   - `message {string}`：ActionSheet 提示内容
   - `items {array}`：ActionSheet 数据源
       - `message {string}`：提示内容
-      - `type {number}`：button类型，0:普通类型，1：取消类型，2：警告类型，当type为1的时候，默认在最小面，最后只能有一个type为1的类型
+      - `type {number}`：button类型，0:普通类型，1：取消类型，2：警告类型，当type为1的时候，默认在最下面，与其他的分开，最多只能有一个type为1的类型
 
 - `callback {function (ret)}`：执行完读取操作后的回调函数。`ret {Object}` 为 `callback` 函数的参数，有两个属性：
   - `result {string}`：结果三种类型 `success`, `cancel`, `error`
