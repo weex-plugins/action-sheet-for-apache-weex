@@ -5,13 +5,10 @@
         <div class="as-title">{{title}}</div>
         <div class="as-message">{{message}}</div>
       </div>
-      <div class="as-btn">
-        <text class="as-btn-text">确认</text>
+      <div class="as-btn" v-for="(item, index) in items" :class="{'as-btn-last':index == items.length - 1}" @click="ok(index)">
+        <text class="as-btn-text" :class="{'as-text-warn':item.type==2}">{{item.message}}</text>
       </div>
-      <div class="as-btn as-btn-remove">
-        <text class="as-btn-text as-text-remove">删除</text>
-      </div>
-      <div type="button" class="as-btn as-cancel">
+      <div type="button" v-if="hasCancel" class="as-btn as-cancel" @click="cancel">
         <text class="as-btn-text">取消</text>
       </div>
     </div>      
@@ -61,11 +58,11 @@
     text-align: center;
     color: #1ba1e2;
   }
-  .as-btn-remove{
+  .as-btn-last{
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
   }
-  .as-text-remove{
+  .as-text-warn{
     color: red;
   }
   .as-cancel{
@@ -75,17 +72,29 @@
 </style>
 <script>
   module.exports = {
-    props:{
-      title: {
-        type: String,
-        default: '提示'
-      }
-    },
     data() {
       return {
         message: 'your message',
         title: 'title'
       };
-    }    
+    },
+    methods: {
+      cancel() {
+        const el = document.querySelector('.as-container');  
+        if(el) {
+          el.remove();  
+        }
+      },
+      ok(index) {
+        this.callback({
+          result: 'success',
+          data: {
+            message: this.message,
+            index: index
+          }
+        });
+        this.cancel();
+      }
+    }
   };
 </script>

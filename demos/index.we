@@ -1,9 +1,9 @@
 <template>
   <scroller>
-    <wxc-panel title="action module" type="primary">
+    <div title="action module" type="primary">
       <text style="margin-bottom: 20px;">action value: {{value}}</text>
-      <wxc-button type="primary" onclick="{{createAction}}" value="create action" style="margin-bottom: 20px;"></wxc-button>
-    </wxc-panel>
+      <div onclick="{{createAction}}" style="margin-bottom: 20px;">create action</div>
+    </div>
 
   </scroller>
 </template>

@@ -1,25 +1,21 @@
 <template>
-  <scroller>
-    <wxc-panel title="action module" type="primary">
+    <div class="conatiner">
       <text style="margin-bottom: 20px;">action value: {{value}}</text>
-      <wxc-button type="primary" @click="createAction" value="create action" style="margin-bottom: 20px;"></wxc-button>
-    </wxc-panel>
-
-  </scroller>
+      <div @click="createAction" style="margin: 20px;padding:20px;background-color:#1ba1e2;color:#fff;"><text style="color:#fff">Create Action</text></div>
+    </div>
 </template>
 
 <style>
-  .input {
-    font-size: 60px;
-    height: 80px;
-    width: 400px;
+  .container{
+    flex: 1;
   }
 </style>
 
 <script>
   //require('weex-components');
-  //require('../web/index');
-  var actionSheet = weex.requireModule('actionSheet');
+  import as from '../web/index';
+  weex.install(as);
+  const actionSheet = weex.require('actionSheet');
   module.exports = {
     data: {
       value: '',
@@ -28,7 +24,7 @@
     },
     methods: {
       createAction: function() {
-       
+        
         var items = [];
         for ( var i=0; i< 3; i++) {
           var item = {};

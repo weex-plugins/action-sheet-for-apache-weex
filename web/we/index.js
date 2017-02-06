@@ -7,11 +7,11 @@ const actionSheet = {
       items: [],
       callback: function () {}
     };
-    options = Object.assign(options,defaultOPtions);
-    if (typeof callback === 'function') {
-      options.callback = callback;  
+    options = Object.assign(options, defaultOPtions);
+    if (typeof callbackId !== 'undefined') {
+      options.callback = callback;
     }
-    let inst = new ActionSheetContructor({
+    const inst = new ActionSheetContructor({
       el: document.createElement('div'),
       data: options
     });
@@ -20,12 +20,7 @@ const actionSheet = {
 
 };
 
-const meta = {
-  actionSheet: [{
-    name: 'create',
-    args: ['object', 'function']
-  }]
-};
+
 
 export default {
   init(Weex) {
