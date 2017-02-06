@@ -29,6 +29,9 @@ actionSheet ，方便用户事件选择 以下为 actionSheet 相关的 API
      - `index {number}`：选中的项
      - `message`：选中的内容
 
+## 平台
+ios：齐山(完成),h5:拈笑(完成),android(待完成)
+
 #### 示例
 
 ```html
