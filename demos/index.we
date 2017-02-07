@@ -12,9 +12,10 @@
 </style>
 
 <script>
-  import as from '../web/index';
+  var as = require('../web/index');
+  console.log(as);
   weex.install(as);
-  var actionSheet = require('@weex-module/actionSheet');
+//  var actionSheet = require('@weex-module/actionSheet');
   module.exports = {
     data: {
       value: '',

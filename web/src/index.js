@@ -1,9 +1,9 @@
 // weex-actionSheet-web
-//import VueActionSheet from './vue/action-sheet.vue';
+import VueActionSheet from './vue/action-sheet.vue';
 import WeexActionSheet from './we/action-sheet';
 import meta from './lib/meta';
 import vendor from './lib/vendor';
-//const ActionSheetConstructor = Vue.extend(VueActionSheet);
+
 
 const actionSheet = {
   create(options, callbackID) {
@@ -26,7 +26,13 @@ const actionSheet = {
         self.sender.performCallback(callbackID, res);
       };
     }
-    const vueActionSheetInstance = new WeexActionSheet({
+    let ActionSheet = null;
+    if (window.Vue) {
+      ActionSheet = Vue.extend(VueActionSheet);
+    } else {
+      ActionSheet = WeexActionSheet;
+    }
+    const vueActionSheetInstance = new ActionSheet({
       el: document.createElement('div'),
       data() {
         return opts;

@@ -56,7 +56,7 @@ class ActionSheet {
     btnText.className = GLOBAL_CLASS_PREFIX + 'btn-text';
     btnText.appendChild(document.createTextNode(text));
     btn.appendChild(btnText);
-    btn.addEventListener(() => {
+    btn.addEventListener('click', () => {
       this.cancel();
     }, false);
     container.appendChild(btn);
