@@ -8,7 +8,7 @@
       <div class="as-btn" v-for="(item, index) in items" :class="{'as-btn-last':index == items.length - 1}" @click="ok(index)">
         <text class="as-btn-text" :class="{'as-text-warn':item.type==2}">{{item.message}}</text>
       </div>
-      <div type="button" v-if="hasCancel" class="as-btn as-cancel" @click="cancel">
+      <div v-if="hasCancel" class="as-btn as-cancel" @click="cancel">
         <text class="as-btn-text">取消</text>
       </div>
     </div>      
