@@ -21,7 +21,7 @@
 <plugin xmlns="http://apache.org/weexpack/ns/plugins/1.0"
     xmlns:rim="http://www.blackberry.c"
     id="weex-actionSheet"
-    version="1.2.2">
+    version="1.2.3">
     <name>weex-actionSheet</name>
     <description>weex actionSheet</description>
     <license>Apache 2.0</license>
@@ -36,21 +36,11 @@
          <config-file target="config.xml" parent="/*">
              <feature name="module">
                  <param name="ios-package" value="WXActionSheetModule" />
-                 <param name="api" value="event" />
              </feature>
-             <preference name="CameraUsesGeolocation" value="false" />
          </config-file>
          
-         <header-file src="native/ios/WXActionSheetModule.h" />
-         <source-file src="native/ios/WXActionSheetModule.m" />
-         
-         <framework src="ImageIO.framework" weak="true" />
-         <framework src="CoreLocation.framework" />
-         <framework src="CoreGraphics.framework" />
-         <framework src="AssetsLibrary.framework" />
-         <framework src="MobileCoreServices.framework" />
-         <framework src="CoreGraphics.framework" />
-         <framework src="AVFoundation.framework" />
+         <header-file src="ios/WXActionSheetModule.h" />
+         <source-file src="ios/WXActionSheetModule.m" />
 
      </platform>
 
