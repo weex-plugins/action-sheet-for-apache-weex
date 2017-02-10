@@ -2,8 +2,7 @@
     "version": "1.2.8",
     "platform": [
         "ios",
-        "android",
-        "web"
+        "android"
     ],
     "description": "weex actionSheet",
     "keywords": [
