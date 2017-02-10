@@ -20,8 +20,8 @@
 
 <plugin xmlns="http://apache.org/weexpack/ns/plugins/1.0"
     xmlns:rim="http://www.blackberry.c"
-    id="weex-actionSheet"
-    version="1.2.3">
+    id="weex-actionsheet"
+    version="1.2.4">
     <name>weex-actionSheet</name>
     <description>weex actionSheet</description>
     <license>Apache 2.0</license>

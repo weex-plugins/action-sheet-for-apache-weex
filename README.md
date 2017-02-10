@@ -16,7 +16,6 @@ actionSheet ，方便用户事件选择 以下为 actionSheet 相关的 API
 #### 参数
 
 - `options {Object}`：调用单选 ActionSheet 选项
-  - `index {number}`：默认选中的选项
   - `title {string}`：ActionSheet 名称
   - `message {string}`：ActionSheet 提示内容
   - `items {array}`：ActionSheet 数据源
