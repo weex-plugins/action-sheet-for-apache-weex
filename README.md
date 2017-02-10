@@ -108,4 +108,4 @@ ios：齐山(完成),h5:拈笑(完成),android:墨循(完成)
 [Have a try](http://dotwe.org/c3856e6035fce2f8511a021a5360d3da)
 
 #### demo
-![action demo](./doc/1.gif)
+![action demo](https://raw.githubusercontent.com/weex-plugins/weex-actionSheet/master/doc/1.gif)
