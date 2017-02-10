@@ -44,6 +44,19 @@
 
      </platform>
 
+     <platform name="android">
+        <config-file target="config.xml" parent="/*">
+            <feature name="module">
+                <param name="api" value="actionSheet"/>
+                <param name="android-package" value="com.taobao.weex.extend.module.actionsheet.WXActionSheetModule" />
+                <param name="category" value="module"/>
+            </feature>
+        </config-file>
+
+        <source-file src="android/WXActionSheet.java" target-dir="src/com/taobao/weex/extend/actionsheet/WXActionSheet.java"/>
+        <source-file src="android/WXActionSheetModule.java" target-dir="src/com/taobao/weex/extend/actionsheet/WXActionSheetModule.java">
+     </platform>
+
 
 
 </plugin>
