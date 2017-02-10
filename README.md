@@ -6,7 +6,7 @@
 actionSheet ，方便用户事件选择 以下为 actionSheet 相关的 API
 
 ## 项目地址
-[github](https://github.com/weex-plugins/weex-actionSheet)
+[github](https://github.com/weex-plugins/weex-action-sheet)
 
 ## API
 ### `create(options, callback[options])`
