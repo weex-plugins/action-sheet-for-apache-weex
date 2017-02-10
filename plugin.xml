@@ -19,9 +19,8 @@
 -->
 
 <plugin xmlns="http://apache.org/weexpack/ns/plugins/1.0"
-    xmlns:rim="http://www.blackberry.c"
     id="weex-actionsheet"
-    version="1.2.5">
+    version="1.2.7">
     <name>weex-actionSheet</name>
     <description>weex actionSheet</description>
     <license>Apache 2.0</license>
@@ -54,7 +53,7 @@
         </config-file>
 
         <source-file src="android/WXActionSheet.java" target-dir="src/com/taobao/weex/extend/actionsheet/WXActionSheet.java"/>
-        <source-file src="android/WXActionSheetModule.java" target-dir="src/com/taobao/weex/extend/actionsheet/WXActionSheetModule.java">
+        <source-file src="android/WXActionSheetModule.java" target-dir="src/com/taobao/weex/extend/actionsheet/WXActionSheetModule.java"/>
      </platform>
 
 
