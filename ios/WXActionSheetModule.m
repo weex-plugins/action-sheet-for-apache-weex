@@ -7,7 +7,7 @@
  */
 
 #import "WXActionSheetModule.h"
-#import "WXConvert.h"
+#import <WeexSDK/WXConvert.h>
 
 @interface WXActionSheetModule()
 

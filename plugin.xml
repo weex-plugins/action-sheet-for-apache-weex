@@ -20,7 +20,7 @@
 
 <plugin xmlns="http://apache.org/weexpack/ns/plugins/1.0"
     id="weex-action-sheet"
-    version="1.3.1">
+    version="1.3.2">
     <name>weex-action-sheet</name>
     <description>weex actionSheet</description>
     <license>Apache 2.0</license>
@@ -33,8 +33,10 @@
      <platform name="ios">
          
          <config-file target="config.xml" parent="/*">
-             <feature name="module">
+             <feature name="WXActionSheetModule">
+                 <param name="category" value="module" />
                  <param name="ios-package" value="WXActionSheetModule" />
+                 <param name="api" value="actionSheet" />
              </feature>
          </config-file>
          
