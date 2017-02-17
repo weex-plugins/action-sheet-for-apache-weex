@@ -321,7 +321,7 @@ var Component = __webpack_require__(10)(
   /* cssModules */
   null
 )
-Component.options.__file = "/Users/ali-130257n/www/weex-actionSheet/web/src/vue/action-sheet.vue"
+Component.options.__file = "/Users/ali-130257n/www/weex-action-sheet/web/src/vue/action-sheet.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] action-sheet.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -332,9 +332,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-18fee04b", Component.options)
+    hotAPI.createRecord("data-v-c4699e00", Component.options)
   } else {
-    hotAPI.reload("data-v-18fee04b", Component.options)
+    hotAPI.reload("data-v-c4699e00", Component.options)
   }
 })()}
 
@@ -853,7 +853,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-18fee04b", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-c4699e00", module.exports)
   }
 }
 
@@ -868,13 +868,13 @@ var content = __webpack_require__(6);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(13)("188935cc", content, false);
+var update = __webpack_require__(13)("0d91a00e", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-18fee04b!./../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./action-sheet.vue", function() {
-     var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-18fee04b!./../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./action-sheet.vue");
+   module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-c4699e00!./../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./action-sheet.vue", function() {
+     var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-c4699e00!./../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./action-sheet.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -1180,8 +1180,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // weex-actionSheet-web
 var actionSheet = {
   create: function create(options, callbackID) {
-    var _this = this;
-
     var defaultOPtions = {
       title: '提示',
       message: '',
@@ -1196,16 +1194,13 @@ var actionSheet = {
       opts.items = _vendor2.default.filterData(options.items);
     }
     if (typeof callbackID === 'function') {
-      (function () {
-        var self = _this;
-        opts.callback = function (res) {
-          self.sender.performCallback(callbackID, res);
-        };
-      })();
+      var self = this;
+      opts.callback = function (res) {
+        self.sender.performCallback(callbackID, res);
+      };
     }
     var ActionSheet = null;
     if (window.Vue) {
-      console.log(window.Vue);
       ActionSheet = Vue.extend(_actionSheet2.default);
     } else {
       ActionSheet = _actionSheet4.default;
@@ -1219,6 +1214,10 @@ var actionSheet = {
     document.body.appendChild(vueActionSheetInstance.$el);
   }
 };
+
+if (window.Vue) {
+  weex.registerModule('actionSheet', actionSheet);
+}
 
 function init(weex) {
   weex.registerApiModule('actionSheet', actionSheet, _meta2.default);

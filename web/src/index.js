@@ -42,6 +42,10 @@ const actionSheet = {
   }
 };
 
+if(window.Vue) {
+  weex.registerModule('actionSheet', actionSheet);
+}
+
 function init(weex) {
   weex.registerApiModule('actionSheet', actionSheet, meta);
 }
