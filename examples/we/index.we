@@ -12,8 +12,8 @@
 </style>
 
 <script>
-  var as = require('../web/index');
-  console.log(as);
+  var as = require('../../js/build/main');
+
   weex.install(as);
 //  var actionSheet = require('@weex-module/actionSheet');
   module.exports = {

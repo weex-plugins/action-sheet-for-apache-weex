@@ -33,8 +33,8 @@
     "node": ">=4"
   },
   "scripts": {
-    "dev": "rollup -w -c ./build/rollup.config.js",
-    "build": "rollup -c ./build/rollup.config.js",
+    "dev": "webpack --watch --config build/webpack.config.js",
+    "build": "webpack --config build/webpack.config.js",
     "dev:examples": "webpack --watch --config build/webpack.examples.config.js",
     "build:examples": "webpack --config build/webpack.examples.config.js",
     "copy:examples": "rm -rf .examples/android/app/src/main/assets/* && cp -vrf ./examples/build/* ./android/app/src/main/assets/ &&rm -rf .examples/ios/bundlejs/* && cp -vrf ./examples/build/* .examples/ios/bundles/",
@@ -89,6 +89,11 @@
     "weex-components": "^0.2.0",
     "weex-loader": "^0.4.0",
     "weex-vdom-tester": "^0.2.0",
-    "wwp": "^0.3.5"
+    "wwp": "^0.3.5",
+    "style-loader": "^0.13.1",
+    "vue-loader": "^10.3.0",
+    "css-loader": "^0.26.1",
+    "vue": "^2.1.10",
+    "vue-template-compiler": "^2.1.10"
   }
 }
