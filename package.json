@@ -2,7 +2,8 @@
   "name": "weex-action-sheet",
   "version": "0.1.1",
   "main": "./js/dist/index.js",
-
+  "author": "Jack Pu",
+  "license": "ISC",
   "description": "action sheet extend",
   "license": "Apache-2.0",
    "ios":{

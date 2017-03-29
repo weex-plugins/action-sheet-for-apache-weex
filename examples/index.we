@@ -1,7 +1,7 @@
 <template>
     <div class="conatiner">
       <text style="margin-bottom: 20px;">action value: {{value}}</text>
-      <div @click="createAction" style="margin: 20px;padding:20px;background-color:#1ba1e2;color:#fff;"><text style="color:#fff">Create Action</text></div>
+      <div onclick="{{createAction}}" style="margin: 20px;padding:20px;background-color:#1ba1e2;color:#fff;"><text style="color:#fff">Create Action</text></div>
     </div>
 </template>
 
@@ -12,10 +12,10 @@
 </style>
 
 <script>
-  //require('weex-components');
-  import as from '../web/index';
+  var as = require('../web/index');
+  console.log(as);
   weex.install(as);
-  const actionSheet = weex.require('actionSheet');
+//  var actionSheet = require('@weex-module/actionSheet');
   module.exports = {
     data: {
       value: '',
