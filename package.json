@@ -1,7 +1,7 @@
 {
   "name": "weex-action-sheet",
   "version": "0.1.1",
-  "main": "./js/build/index.js",
+  "main": "./js/build/main.js",
   "author": "Jack Pu",
   "license": "ISC",
   "description": "action sheet extend",
