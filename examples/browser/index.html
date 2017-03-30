@@ -20,11 +20,6 @@
   </script>
   <script src="./lib/browser.js"></script>
   <!--<script src="/node_modules/@ali/weex-html5/dist/weex.js"></script>-->
-  <script src="../../js/dist/index.js"></script>
-  <script>
-    weex.install(WeexActionSheet)
-
-  </script>
 </head>
 <body>
 <div id="weex"></div>
@@ -50,7 +45,7 @@
     }
 
     var loader = getUrlParam('loader') || 'xhr'
-    var page = getUrlParam('page') || '/canvas_demo/build/simple/index.js'
+    var page = getUrlParam('page') || '/examples/build/index.js'
 
     var JSONP_CALLBACK_NAME = 'weexJsonpCallback'
 
