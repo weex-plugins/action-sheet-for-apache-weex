@@ -114,6 +114,7 @@
     "weex-loader": "^0.4.0",
     "weex-vdom-tester": "^0.2.0",
     "wwp": "^0.3.5",
-    "xml2map": "^1.0.2"
+    "xml2map": "^1.0.2",
+    "style-loader": "^0.13.1"
   }
 }
