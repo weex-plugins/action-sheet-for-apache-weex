@@ -1,10 +1,12 @@
+#Xcode
+ios/Pods/
+ios/Podfile.lock
+examples/ios/Pods/
+examples/ios/Podfile.lock
 .weexpack.cache
 # OSX
 #
 .DS_Store
-
-# Xcode
-#
 
 *.pbxuser
 !default.pbxuser

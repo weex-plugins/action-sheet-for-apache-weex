@@ -4,7 +4,7 @@ platform :ios, '7.0'
 
 def common
 	pod 'WeexSDK'
-	pod 'WeexPlugin'
+	pod 'WeexPluginLoader'
 end
 
 target 'WeexActionSheet' do

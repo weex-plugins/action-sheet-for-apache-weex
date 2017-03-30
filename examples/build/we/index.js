@@ -337,11 +337,19 @@
 		if (typeof __vue_options__ === "function") {
 			__vue_options__ = __vue_options__.options;
 		}
+<<<<<<< HEAD
 		__vue_options__.__file = "/Users/zq/workspace/github/weex-action-sheet_1/js/src/vue/action-sheet.vue";
 		__vue_options__.render = __vue_template__.render;
 		__vue_options__.staticRenderFns = __vue_template__.staticRenderFns;
 		__vue_options__._scopeId = "data-v-b6072292";
 		__vue_options__.style = __vue_options__.style || {};
+=======
+		__vue_options__.__file = "/Users/jerry/workspace/pm/github/plugins/weex-action-sheet/js/src/vue/action-sheet.vue"
+		__vue_options__.render = __vue_template__.render
+		__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+		__vue_options__._scopeId = "data-v-77d75ceb"
+		__vue_options__.style = __vue_options__.style || {}
+>>>>>>> 3e531200896a84f1064dafed231773b24799761f
 		__vue_styles__.forEach(function (module) {
 			for (var name in module) {
 				__vue_options__.style[name] = module[name];
@@ -359,6 +367,7 @@
 	/***/function (module, exports) {
 
 		module.exports = {
+<<<<<<< HEAD
 			"as-container": {
 				"flex": 1,
 				"position": "fixed",
@@ -410,6 +419,61 @@
 				"borderRadius": 15
 			}
 		};
+=======
+		  "as-container": {
+		    "flex": 1,
+		    "position": "fixed",
+		    "left": 0,
+		    "right": 0,
+		    "top": 0,
+		    "bottom": 0,
+		    "backgroundColor": "rgba(0,0,0,0.5)"
+		  },
+		  "as-dialog": {
+		    "position": "absolute",
+		    "left": 10,
+		    "right": 10,
+		    "bottom": 10,
+		    "padding": 20
+		  },
+		  "as-hd": {
+		    "padding": 20,
+		    "backgroundColor": "#ffffff",
+		    "alignItems": "center",
+		    "borderTopLeftRadius": 15,
+		    "borderTopRightRadius": 15
+		  },
+		  "as-title": {
+		    "fontSize": 26,
+		    "marginBottom": 15
+		  },
+		  "as-message": {
+		    "fontSize": 24
+		  },
+		  "as-btn": {
+		    "fontSize": 30,
+		    "padding": 30,
+		    "backgroundColor": "#ffffff",
+		    "borderTop": 1
+		  },
+		  "as-btn-text": {
+		    "flex": 1,
+		    "textAlign": "center",
+		    "color": "#1ba1e2"
+		  },
+		  "as-btn-last": {
+		    "borderBottomRightRadius": 15,
+		    "borderBottomLeftRadius": 15
+		  },
+		  "as-text-warn": {
+		    "color": "#FF0000"
+		  },
+		  "as-cancel": {
+		    "marginTop": 30,
+		    "borderRadius": 15
+		  }
+		}
+>>>>>>> 3e531200896a84f1064dafed231773b24799761f
 
 		/***/
 	},

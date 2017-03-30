@@ -26,6 +26,6 @@ Pod::Spec.new do |s|
   s.source_files  = "ios/Sources/**/*.{h,m,mm}"
   
   s.requires_arc = true
-  s.dependency "WeexPlugin"
+  s.dependency "WeexPluginLoader"
   s.dependency "WeexSDK"
 end

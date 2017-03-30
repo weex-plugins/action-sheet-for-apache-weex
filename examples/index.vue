@@ -14,9 +14,7 @@
 <script>
   //require('weex-components');
 
-  var  as  = require("../js/src")
-  console.log("weex",as.init)
-  Weex.install(as);
+  Weex.install(require("../js/src"));
   const actionSheet = weex.require('actionSheet');
   module.exports = {
     data: {

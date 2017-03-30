@@ -46,147 +46,21 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var __vue_exports__, __vue_options__
-	var __vue_styles__ = []
-
-	/* styles */
-	__vue_styles__.push(__webpack_require__(1)
-	)
-
-	/* script */
-	__vue_exports__ = __webpack_require__(2)
-
-	/* template */
-	var __vue_template__ = __webpack_require__(15)
-	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-	if (
-	  typeof __vue_exports__.default === "object" ||
-	  typeof __vue_exports__.default === "function"
-	) {
-	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-	__vue_options__ = __vue_exports__ = __vue_exports__.default
-	}
-	if (typeof __vue_options__ === "function") {
-	  __vue_options__ = __vue_options__.options
-	}
-	__vue_options__.__file = "/Users/jerry/workspace/pm/github/plugins/weex-action-sheet/examples/index.vue"
-	__vue_options__.render = __vue_template__.render
-	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	__vue_options__._scopeId = "data-v-2aab1f1a"
-	__vue_options__.style = __vue_options__.style || {}
-	__vue_styles__.forEach(function (module) {
-	  for (var name in module) {
-	    __vue_options__.style[name] = module[name]
-	  }
-	})
-	if (typeof __register_static_styles__ === "function") {
-	  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
-	}
-
-	module.exports = __vue_exports__
-	module.exports.el = 'true'
-	new Vue(module.exports)
-
-
-/***/ },
-/* 1 */
-/***/ function(module, exports) {
-
-	module.exports = {
-	  "container": {
-	    "flex": 1
-	  }
-	}
-
-/***/ },
-/* 2 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-
-	//require('weex-components');
-
-	var as = __webpack_require__(3);
-	console.log("weex", as.init);
-	Weex.install(as);
-	var actionSheet = weex.require('actionSheet');
-	module.exports = {
-	  data: {
-	    value: '',
-	    index: 0,
-	    txtChange: ''
-	  },
-	  methods: {
-	    createAction: function createAction() {
-
-	      var items = [];
-	      for (var i = 0; i < 3; i++) {
-	        var item = {};
-	        if (i == 0) {
-	          item = { 'type': 0, 'message': '确认' };
-	        }
-	        if (i == 1) {
-	          item = { 'type': 1, 'message': '取消' };
-	        }
-	        if (i == 2) {
-	          item = { 'type': 2, 'message': '删除' };
-	        }
-	        items.push(item);
-	      }
-	      var self = this;
-	      actionSheet.create({
-	        'items': items,
-	        'index': self.index,
-	        'title': '提示',
-	        'message': '欢迎使用weex第三方市场'
-	      }, function (ret) {
-	        var result = ret.result;
-	        if (result == 'success') {
-	          self.value = ret.data.message;
-	          self.index = ret.data.index;
-	        }
-	      });
-	    },
-	    onchange: function onchange(event) {
-	      this.txtChange = event.value;
-	      console.log('onchange', event.value);
-	    }
-	  }
-	};
-
-/***/ },
-/* 3 */
-/***/ function(module, exports, __webpack_require__) {
-
 	'use strict';
 
-	var _actionSheet = __webpack_require__(4);
+	var _actionSheet = __webpack_require__(1);
 
 	var _actionSheet2 = _interopRequireDefault(_actionSheet);
 
-	var _actionSheet3 = __webpack_require__(8);
+	var _actionSheet3 = __webpack_require__(5);
 
 	var _actionSheet4 = _interopRequireDefault(_actionSheet3);
 
-	var _meta = __webpack_require__(13);
+	var _meta = __webpack_require__(10);
 
 	var _meta2 = _interopRequireDefault(_meta);
 
-	var _vendor = __webpack_require__(14);
+	var _vendor = __webpack_require__(11);
 
 	var _vendor2 = _interopRequireDefault(_vendor);
 
@@ -243,21 +117,21 @@
 	};
 
 /***/ },
-/* 4 */
+/* 1 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = []
 
 	/* styles */
-	__vue_styles__.push(__webpack_require__(5)
+	__vue_styles__.push(__webpack_require__(2)
 	)
 
 	/* script */
-	__vue_exports__ = __webpack_require__(6)
+	__vue_exports__ = __webpack_require__(3)
 
 	/* template */
-	var __vue_template__ = __webpack_require__(7)
+	var __vue_template__ = __webpack_require__(4)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -287,7 +161,7 @@
 
 
 /***/ },
-/* 5 */
+/* 2 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -344,7 +218,7 @@
 	}
 
 /***/ },
-/* 6 */
+/* 3 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -451,7 +325,7 @@
 	};
 
 /***/ },
-/* 7 */
+/* 4 */
 /***/ function(module, exports) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -494,7 +368,7 @@
 	module.exports.render._withStripped = true
 
 /***/ },
-/* 8 */
+/* 5 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -506,7 +380,7 @@
 	var GLOBAL_CLASS_PREFIX = 'as-';
 	var TYPE_WARNING = 2;
 
-	__webpack_require__(9);
+	__webpack_require__(6);
 
 	var ActionSheet = function () {
 	  function ActionSheet(opts) {
@@ -614,16 +488,16 @@
 	module.exports = ActionSheet;
 
 /***/ },
-/* 9 */
+/* 6 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(10);
+	var content = __webpack_require__(7);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(12)(content, {});
+	var update = __webpack_require__(9)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -640,10 +514,10 @@
 	}
 
 /***/ },
-/* 10 */
+/* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(11)();
+	exports = module.exports = __webpack_require__(8)();
 	// imports
 
 
@@ -654,7 +528,7 @@
 
 
 /***/ },
-/* 11 */
+/* 8 */
 /***/ function(module, exports) {
 
 	/*
@@ -710,7 +584,7 @@
 
 
 /***/ },
-/* 12 */
+/* 9 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -962,7 +836,7 @@
 
 
 /***/ },
-/* 13 */
+/* 10 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -978,7 +852,7 @@
 	};
 
 /***/ },
-/* 14 */
+/* 11 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1008,35 +882,6 @@
 	    return data;
 	  }
 	};
-
-/***/ },
-/* 15 */
-/***/ function(module, exports) {
-
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('div', {
-	    staticClass: ["conatiner"]
-	  }, [_c('text', {
-	    staticStyle: {
-	      marginBottom: "20px"
-	    }
-	  }, [_vm._v("action value: " + _vm._s(_vm.value))]), _c('div', {
-	    staticStyle: {
-	      margin: "20px",
-	      padding: "20px",
-	      backgroundColor: "#1ba1e2",
-	      color: "#fff"
-	    },
-	    on: {
-	      "click": _vm.createAction
-	    }
-	  }, [_c('text', {
-	    staticStyle: {
-	      color: "#fff"
-	    }
-	  }, [_vm._v("Create Action")])])])
-	},staticRenderFns: []}
-	module.exports.render._withStripped = true
 
 /***/ }
 /******/ ]);
