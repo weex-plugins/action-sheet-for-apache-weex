@@ -4,7 +4,7 @@ platform :ios, '7.0'
 
 def common
 	pod 'WeexSDK'
-	pod 'WeexPlugin', :git => 'https://github.com/kfeagle/WeexPlugin.git'
+	pod 'WeexPlugin'
 end
 
 target 'WeexActionSheet' do

@@ -7,26 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BF8FED682B03D996DC4317B /* libPods-WeexActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E45D157D4B2DACFB966D28 /* libPods-WeexActionSheet.a */; };
 		C45843F01E84EF7B00D88C0B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C45843EF1E84EF7B00D88C0B /* Info.plist */; };
-		C45843F81E84F39100D88C0B /* WPTestComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = C45843F21E84F39100D88C0B /* WPTestComponent.h */; };
-		C45843F91E84F39100D88C0B /* WPTestComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = C45843F31E84F39100D88C0B /* WPTestComponent.m */; };
-		C45843FA1E84F39100D88C0B /* WPTestHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = C45843F41E84F39100D88C0B /* WPTestHandler.h */; };
-		C45843FB1E84F39100D88C0B /* WPTestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C45843F51E84F39100D88C0B /* WPTestHandler.m */; };
-		C45843FC1E84F39100D88C0B /* WPTestModule.h in Headers */ = {isa = PBXBuildFile; fileRef = C45843F61E84F39100D88C0B /* WPTestModule.h */; };
-		C45843FD1E84F39100D88C0B /* WPTestModule.m in Sources */ = {isa = PBXBuildFile; fileRef = C45843F71E84F39100D88C0B /* WPTestModule.m */; };
+		C4FB7ADA1E8B8F4E003DBC0F /* WXActionSheetModule.h in Headers */ = {isa = PBXBuildFile; fileRef = C4FB7AD81E8B8F4E003DBC0F /* WXActionSheetModule.h */; };
+		C4FB7ADB1E8B8F4E003DBC0F /* WXActionSheetModule.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FB7AD91E8B8F4E003DBC0F /* WXActionSheetModule.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0F1C92092FF9562A4B475501 /* Pods-WeexActionSheet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeexActionSheet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeexActionSheet/Pods-WeexActionSheet.debug.xcconfig"; sourceTree = "<group>"; };
 		87F9AEB97654FF7EEA032F16 /* Pods-WeexActionSheet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeexActionSheet.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeexActionSheet/Pods-WeexActionSheet.release.xcconfig"; sourceTree = "<group>"; };
+		B8E45D157D4B2DACFB966D28 /* libPods-WeexActionSheet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeexActionSheet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45843E41E84EF5B00D88C0B /* WeexActionSheet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeexActionSheet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45843EF1E84EF7B00D88C0B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C45843F21E84F39100D88C0B /* WPTestComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPTestComponent.h; sourceTree = "<group>"; };
-		C45843F31E84F39100D88C0B /* WPTestComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPTestComponent.m; sourceTree = "<group>"; };
-		C45843F41E84F39100D88C0B /* WPTestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPTestHandler.h; sourceTree = "<group>"; };
-		C45843F51E84F39100D88C0B /* WPTestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPTestHandler.m; sourceTree = "<group>"; };
-		C45843F61E84F39100D88C0B /* WPTestModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPTestModule.h; sourceTree = "<group>"; };
-		C45843F71E84F39100D88C0B /* WPTestModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPTestModule.m; sourceTree = "<group>"; };
+		C4FB7AD81E8B8F4E003DBC0F /* WXActionSheetModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXActionSheetModule.h; sourceTree = "<group>"; };
+		C4FB7AD91E8B8F4E003DBC0F /* WXActionSheetModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXActionSheetModule.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BF8FED682B03D996DC4317B /* libPods-WeexActionSheet.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +38,7 @@
 		248CB2E7B700A3049EE0727E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B8E45D157D4B2DACFB966D28 /* libPods-WeexActionSheet.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -69,12 +65,8 @@
 		C45843F11E84F39000D88C0B /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				C45843F21E84F39100D88C0B /* WPTestComponent.h */,
-				C45843F31E84F39100D88C0B /* WPTestComponent.m */,
-				C45843F41E84F39100D88C0B /* WPTestHandler.h */,
-				C45843F51E84F39100D88C0B /* WPTestHandler.m */,
-				C45843F61E84F39100D88C0B /* WPTestModule.h */,
-				C45843F71E84F39100D88C0B /* WPTestModule.m */,
+				C4FB7AD81E8B8F4E003DBC0F /* WXActionSheetModule.h */,
+				C4FB7AD91E8B8F4E003DBC0F /* WXActionSheetModule.m */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -95,9 +87,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C45843FA1E84F39100D88C0B /* WPTestHandler.h in Headers */,
-				C45843F81E84F39100D88C0B /* WPTestComponent.h in Headers */,
-				C45843FC1E84F39100D88C0B /* WPTestModule.h in Headers */,
+				C4FB7ADA1E8B8F4E003DBC0F /* WXActionSheetModule.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +103,7 @@
 				C45843E01E84EF5B00D88C0B /* Frameworks */,
 				C45843E11E84EF5B00D88C0B /* Headers */,
 				C45843E21E84EF5B00D88C0B /* Resources */,
+				AAD02B325B96F7630FB97BB6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,6 +173,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		AAD02B325B96F7630FB97BB6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeexActionSheet/Pods-WeexActionSheet-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -189,9 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C45843FD1E84F39100D88C0B /* WPTestModule.m in Sources */,
-				C45843F91E84F39100D88C0B /* WPTestComponent.m in Sources */,
-				C45843FB1E84F39100D88C0B /* WPTestHandler.m in Sources */,
+				C4FB7ADB1E8B8F4E003DBC0F /* WXActionSheetModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
