@@ -8,7 +8,7 @@
 
 #import "WXActionSheetModule.h"
 #import <WeexSDK/WXConvert.h>
-#import <WeexPlugin/WeexPlugin.h>
+#import <WeexPluginLoader/WeexPluginLoader.h>
 
 @interface WXActionSheetModule()
 

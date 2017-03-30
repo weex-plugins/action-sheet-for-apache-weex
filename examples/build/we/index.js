@@ -326,10 +326,10 @@
 		if (typeof __vue_options__ === "function") {
 		  __vue_options__ = __vue_options__.options
 		}
-		__vue_options__.__file = "/Users/zq/workspace/github/weex-action-sheet_1/js/src/vue/action-sheet.vue"
+		__vue_options__.__file = "/Users/jerry/workspace/pm/github/plugins/weex-action-sheet/js/src/vue/action-sheet.vue"
 		__vue_options__.render = __vue_template__.render
 		__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-		__vue_options__._scopeId = "data-v-b6072292"
+		__vue_options__._scopeId = "data-v-77d75ceb"
 		__vue_options__.style = __vue_options__.style || {}
 		__vue_styles__.forEach(function (module) {
 		  for (var name in module) {
@@ -365,6 +365,7 @@
 		    "padding": 20
 		  },
 		  "as-hd": {
+		    "padding": 20,
 		    "backgroundColor": "#ffffff",
 		    "alignItems": "center",
 		    "borderTopLeftRadius": 15,
@@ -379,8 +380,9 @@
 		  },
 		  "as-btn": {
 		    "fontSize": 30,
+		    "padding": 30,
 		    "backgroundColor": "#ffffff",
-		    "borderTop": "1px solid #ddd"
+		    "borderTop": 1
 		  },
 		  "as-btn-text": {
 		    "flex": 1,
