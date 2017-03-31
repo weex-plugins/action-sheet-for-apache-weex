@@ -14,7 +14,6 @@
 <script>
   //require('weex-components');
 
-  Weex.install(require("../js/src"));
   const actionSheet = weex.require('actionSheet');
   module.exports = {
     data: {
