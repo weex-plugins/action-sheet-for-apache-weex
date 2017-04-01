@@ -14,7 +14,7 @@
 <script>
   //require('weex-components');
 
-  const actionSheet = weex.require('actionSheet');
+  const actionSheet = weex.requireModule('actionSheet');
   module.exports = {
     data: {
       value: '',
