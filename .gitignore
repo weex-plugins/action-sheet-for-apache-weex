@@ -1,8 +1,8 @@
 #Xcode
 ios/Pods/
 ios/Podfile.lock
-examples/ios/Pods/
-examples/ios/Podfile.lock
+playground/ios/Pods/
+playground/ios/Podfile.lock
 .weexpack.cache
 # OSX
 #
