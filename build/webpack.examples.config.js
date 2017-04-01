@@ -28,9 +28,6 @@ function walk(dir) {
 
 walk();
 
-var buildBrowserPlugin  = 'playground/browser/build/pluginInstall'
-var  browserPlugin = path.join(__dirname,  '../playground/browser/pluginInstall.js')
-entry[buildBrowserPlugin] =  browserPlugin + '?entry=true';
 
 var banner = '// { "framework": "Vue" }\n'
 
