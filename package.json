@@ -5,14 +5,17 @@
   "author": "Jack Pu",
   "license": "Apache-2.0",
   "description": "action sheet extend",
+  "WeexSDKVersoin": "<%= WeexSDKVersion %>",
   "ios": {
     "type": "pod",
-    "name": "WeexActionSheet"
+    "name": "WeexActionSheet",
+    "version": "0.1.1"
   },
   "android": {
     "type": "maven",
     "name": "weexactionsheet",
-    "groupId": ""
+    "groupId": "org.weex.plugin",
+    "version": "0.1.1"
   },
   "keywords": [
     "weex",
@@ -36,7 +39,9 @@
     "dev": "webpack --watch --config build/webpack.config.js",
     "build": "webpack  --config build/webpack.config.js",
     "dev:examples": "webpack --watch --config build/webpack.examples.config.js",
+    "dev:examples:web": "webpack --watch --config build/webpack.examples.web.config.js",
     "build:examples": "webpack --config build/webpack.examples.config.js",
+    "build:examples:web": "webpack --config build/webpack.examples.web.config.js",
     "copy:examples": "rm -rf .examples/android/app/src/main/assets/* && cp -vrf ./examples/build/* ./android/app/src/main/assets/ &&rm -rf .examples/ios/bundlejs/* && cp -vrf ./examples/build/* .examples/ios/bundles/",
     "lint": "eslint html5",
     "serve": "serve ./ -p 12580"
@@ -56,7 +61,8 @@
     "weex-picker": "^0.1.0",
     "weex-rax-framework": "0.1.7",
     "weex-styler": "0.1.8",
-    "weex-vue-framework": "2.1.8-weex.1"
+    "weex-vue-framework": "2.1.8-weex.1",
+    "weex-vue-render": "^0.11.2"
   },
   "devDependencies": {
     "babel-core": "^6.17.0",

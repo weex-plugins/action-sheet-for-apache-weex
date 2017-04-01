@@ -51,6 +51,7 @@ module.exports = {
         test: /\.(we|vue)(\?[^?]+)?$/,
         loader: 'weex'
       },
+
       {
         test: /\.js(\?[^?]+)?$/,
         exclude: /node_modules/,

@@ -120,7 +120,7 @@
 
 	//require('weex-components');
 
-	var actionSheet = weex.require('actionSheet');
+	var actionSheet = weex.requireModule('actionSheet');
 	module.exports = {
 	  data: {
 	    value: '',
