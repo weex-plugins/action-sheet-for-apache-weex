@@ -12,9 +12,8 @@
 </style>
 
 <script>
-  var as = require('../../js/src');
-  weex.install(as);
-//  var actionSheet = require('@weex-module/actionSheet');
+
+  var actionSheet = require('@weex-module/actionSheet');
   module.exports = {
     data: {
       value: '',

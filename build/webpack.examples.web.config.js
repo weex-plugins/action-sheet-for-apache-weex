@@ -27,7 +27,15 @@ function walk(dir) {
         fs.outputFileSync(entryFile, getEntryFileContent(entryFile, fullpath));
         var name = path.join('examples', 'build/vue-web', /*path.relative('vue', dir)*/dir, path.basename(file, extname));
         entry[name] = entryFile + '?entry=true';
-      } else if (stat.isDirectory() && file !== 'build' && file !== 'include') {
+      }
+      if (stat.isFile() && extname === '.we' ) {
+        var name = path.join('examples', 'build', dir, path.basename(file, extname));
+        entry[name] = fullpath + '?entry=true';
+        if (extname === '.we') {
+
+        }
+      }
+      else if (stat.isDirectory() && file !== 'build' && file !== 'include') {
         var subdir = path.join(dir, file);
         walk(subdir);
       }
@@ -60,12 +68,20 @@ module.exports = {
   module: {
     loaders: [
       {
+        test: /\.(we)(\?[^?]+)?$/,
+        loader: 'weex'
+      },
+      {
         test: /\.js$/,
         loaders: ['babel-loader'],
         exclude: /node_modules/
       }, {
         test: /\.vue(\?[^?]+)?$/,
         loaders: ['vue-loader']
+      },
+      {
+        test: /\.css(\?[^?]+)?$/,
+        loader: 'style-loader!css-loader'
       }
     ]
   },
