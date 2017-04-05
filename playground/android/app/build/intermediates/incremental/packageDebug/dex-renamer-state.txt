@@ -1,4 +1,0 @@
-#Wed Mar 29 15:53:53 CST 2017
-base.0=/Users/moxun/github/test/examples/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
-renamed.0=classes.dex
-file.0=/Users/moxun/github/test/examples/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
