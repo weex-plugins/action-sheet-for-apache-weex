@@ -13,7 +13,8 @@
 
 <script>
 
-  var actionSheet = require('@weex-module/actionSheet');
+ var actionSheet = require('@weex-module/actionSheet');
+
   module.exports = {
     data: {
       value: '',
