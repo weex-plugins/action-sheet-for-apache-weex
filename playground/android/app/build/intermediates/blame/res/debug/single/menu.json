@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/moxun/github/test/examples/android/app/build/intermediates/res/merged/debug/menu/capture.xml",
+        "source": "/Users/moxun/github/test/examples/android/app/src/main/res/menu/capture.xml"
+    },
+    {
+        "merged": "/Users/moxun/github/test/examples/android/app/build/intermediates/res/merged/debug/menu/history.xml",
+        "source": "/Users/moxun/github/test/examples/android/app/src/main/res/menu/history.xml"
+    },
+    {
+        "merged": "/Users/moxun/github/test/examples/android/app/build/intermediates/res/merged/debug/menu/encode.xml",
+        "source": "/Users/moxun/github/test/examples/android/app/src/main/res/menu/encode.xml"
+    },
+    {
+        "merged": "/Users/moxun/github/test/examples/android/app/build/intermediates/res/merged/debug/menu/refresh.xml",
+        "source": "/Users/moxun/github/test/examples/android/app/src/main/res/menu/refresh.xml"
+    },
+    {
+        "merged": "/Users/moxun/github/test/examples/android/app/build/intermediates/res/merged/debug/menu/main.xml",
+        "source": "/Users/moxun/github/test/examples/android/app/src/main/res/menu/main.xml"
+    },
+    {
+        "merged": "/Users/moxun/github/test/examples/android/app/build/intermediates/res/merged/debug/menu/main_scan.xml",
+        "source": "/Users/moxun/github/test/examples/android/app/src/main/res/menu/main_scan.xml"
+    }
+]
