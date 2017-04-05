@@ -1,4 +1,4 @@
-package com.taobao.weex.demo;
+package org.weex.demo;
 
 import org.junit.Test;
 
