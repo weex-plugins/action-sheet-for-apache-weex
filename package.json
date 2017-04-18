@@ -1,6 +1,6 @@
 {
     "name": "weex-action-sheet",
-    "version": "2.0.5",
+    "version": "2.0.6",
     "main": "./js/build/main.js",
     "author": "Jack Pu",
     "license": "Apache-2.0",

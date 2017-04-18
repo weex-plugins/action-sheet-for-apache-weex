@@ -6,7 +6,7 @@
 # 快速使用
 - 通过weexpack初始化一个weextest工程
    ```
-   weexpack create dev weextest
+   weexpack create weextest
    ```
 - 添加ios平台
    ```
