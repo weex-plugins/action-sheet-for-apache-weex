@@ -1,6 +1,6 @@
 {
     "name": "weex-action-sheet",
-    "version": "2.0.4",
+    "version": "2.0.5",
     "main": "./js/build/main.js",
     "author": "Jack Pu",
     "license": "Apache-2.0",
@@ -13,9 +13,9 @@
     },
     "android": {
         "type": "maven",
-        "name": "weexactionsheet",
+        "name": "actionsheet",
         "groupId": "org.weex.plugin",
-        "version": "0.1.1"
+        "version": "1.0.0"
     },
     "keywords": [
         "weex",
