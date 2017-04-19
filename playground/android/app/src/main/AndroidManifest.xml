@@ -53,10 +53,10 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
-                <action android:name="com.taobao.android.intent.action.WEEX"/>
+                <action android:name="com.taobao.android.intent.action.WEEXPLUGIN"/>
 
                 <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="com.taobao.android.intent.category.WEEX"/>
+                <category android:name="com.taobao.android.intent.category.WEEXPLUGIN"/>
                 <action android:name="android.intent.action.VIEW"/>
 
                 <data android:scheme="http"/>

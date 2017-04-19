@@ -216,8 +216,8 @@ import java.util.HashMap;
 
 public class WXEventModule extends WXModule {
 
-  private static final String WEEX_CATEGORY = "com.taobao.android.intent.category.WEEX";
-  private static final String WEEX_ACTION = "com.taobao.android.intent.action.WEEX";
+  private static final String WEEX_CATEGORY = "com.taobao.android.intent.category.WEEXPLUGIN";
+  private static final String WEEX_ACTION = "com.taobao.android.intent.action.WEEXPLUGIN";
 
 
   @JSMethod(uiThread = true)
